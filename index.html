@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Notice & Consent</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 30px 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 680px;
+      width: 100%;
+      padding: 32px;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    h1 {
+      font-size: 22px;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      text-align: justify;
+      margin-bottom: 24px;
+    }
+
+    .terms-box {
+      border: 1px solid #dce1e7;
+      border-radius: 8px;
+      height: 320px;
+      overflow-y: scroll;
+      padding: 16px 20px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #333;
+      background: #fafafa;
+      position: relative;
+    }
+
+    .terms-box h2 {
+      font-size: 15px;
+      margin: 16px 0 6px;
+      color: #1a1a2e;
+    }
+
+    .terms-box p {
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+
+    .terms-box ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    .terms-box li {
+      margin-bottom: 6px;
+    }
+
+    .scroll-hint {
+      text-align: center;
+      font-size: 13px;
+      color: #e07b00;
+      margin: 10px 0 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .scroll-hint.hidden { display: none; }
+
+    .read-confirm {
+      font-size: 13px;
+      color: #2e7d32;
+      text-align: center;
+      margin: 6px 0 20px;
+      display: none;
+    }
+
+    .read-confirm.show { display: block; }
+
+    .btn-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 16px;
+    }
+
+    button {
+      padding: 12px 36px;
+      font-size: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    #btn-agree {
+      background: #0078d4;
+      color: white;
+    }
+
+    #btn-agree:hover:not(:disabled) {
+      background: #005fa3;
+    }
+
+    #btn-agree:disabled {
+      background: #b0c8e8;
+      cursor: not-allowed;
+    }
+
+    #btn-disagree {
+      background: #f3f4f6;
+      color: #444;
+      border: 1px solid #ccc;
+    }
+
+    #btn-disagree:hover {
+      background: #e8e8e8;
+    }
+
+    .disagree-msg {
+      display: none;
+      margin-top: 20px;
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: #7d5800;
+      text-align: center;
+    }
+
+    .disagree-msg.show { display: block; }
+
+    .consent-box {
+      background: #f0f7ff;
+      border: 1px solid #b3d4f5;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      text-align: justify;
+      display: none;
+    }
+
+    .consent-box.show { display: block; }
+
+    .consent-box strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    .footer-note {
+      margin-top: 24px;
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- Optional: replace src with your logo URL, or remove this block -->
+  <!-- <div class="logo"><img src="your-logo.png" alt="Logo" /></div> -->
+
+  <h1>Privacy Notice</h1>
+  <p class="subtitle"><br />We care about your personal data.<br /><br />Allianz Technology SE (India Branch), a part of the Allianz Group, is an IT/ITES organisation which is a captive centre for driving the technology journey of its group companies (referred hereunder as “Allianz”, “we”, “us”, “our”). Protecting your privacy is a top priority for us. This privacy notice explains how and what type of personal data will be collected, why it is collected and to whom it is shared or disclosed. Please read this notice carefully.</p>
+
+  <div class="terms-box" id="termsBox">
+
+    <h2>1. Who is the data controller?</h2>
+    <p>
+      A data controller is the individual or legal person who controls and is responsible to keep and use personal data in paper or electronic files. Allianz Technology SE (India Branch) and Allianz Services Private Limited is the data controller as defined by relevant data protection laws and regulation.
+    </p>
+
+    <h2>2.	What personal data will be collected?</h2>
+    <p>
+      We will collect and process various types of personal data about you as follows: 
+      <ul>
+        <li>Surname, first name</li>
+        <li>Id</li>
+        <li>Email address</li>
+      </ul>
+    </p>
+
+    <h2>3.	How will we obtain and use your personal data?</h2>
+    <p>
+      We will collect and use your personal data that you provide to us for the below stated Purpose and with your express consent unless applicable laws and regulations do not require us to obtain your express consent.
+<br />
+<b>Purpose:</b><i> MS Form will collect your Name & Email id for the login purpose into CYW application.</i> Information will be used for the events happening within CYW week. Like showcasing on the leaderboard and playing games. Your details will be processed Allianz IT environment and for the above said purpose only.
+    </p>
+
+    <h2>4.	Who will have access to your personal data?</h2>
+    <p>
+      We will ensure that your personal data is processed in a manner that is compatible with the Purpose indicated above.</p>
+<p>     Details collected will be published in the application and it will be visible to all Allianz technology India Employees who logs into Application. 
+    </p>
+
+    <h2>5. Where will my personal data be processed?</h2>
+    <p>
+      Your details will be processed Allianz IT environment and will be within india. The details will be processed for the above said purpose.
+    </p>
+
+    <h2>6. What are your rights in respect of your personal data?</h2>
+    <p>
+      Where permitted by applicable law or regulation, you have the right to: 
+<ul><li>Access your personal data held about you and to learn the origin of the data, the purposes and ends of the processing, the details of the data controller(s), the data processor(s) and the parties to whom the data may be disclosed;</li>
+<li>Withdraw your consent at any time where your personal data is processed with your consent;</li>
+<li>Update or correct your personal data so that it is always accurate;</li>
+<li>Delete your personal data from our records if it is no longer needed for the purposes indicated above; and</li>
+<li>Restrict the processing of your personal data in certain circumstances, for example where you have contested the accuracy of your personal data, for the period enabling us to verify its accuracy;</li>
+</ul>
+You may exercise these rights by sending an email from your registered / provided email ID to [Safal.tumbde@allianz.com].
+Please note that the request mail must be accompanied with a copy of photo ID proof to identify and verify the requester. This is to ensure that the details are shared to the right individual and not to any third-party.
+    </p>
+
+    <h2>7. How can you object to the processing of your personal data?</h2>
+    <p>
+      Where permitted by applicable law or regulation, you have the right to object to us processing your personal data or tell us to stop processing it (including for purposes of direct marketing). Once you have informed us of this request, we shall no longer process your personal data unless permitted by applicable laws and regulations. You may exercise this right in the same manner as for your other rights indicated in section 6 above.
+    </p>
+
+    <h2>8. How long do we keep your personal data?</h2>
+    <p>
+      We will retain your personal data for 4 weeks from the date of collection, unless a longer retention period is required or as permitted by law. 
+      We will not retain your personal data for longer than necessary and we will hold it only for the purposes for which it was obtained.
+    </p>
+
+    <h2>9. How can you contact us?</h2>
+    <p>
+      If you have any queries about how we use your personal data, you can contact us at the email as provided below: 
+      <ul><li>Email: Safal.tumbde@allianz.com</li></ul>
+    </p>
+
+    <h2>10. How often do we update this privacy notice?</h2>
+    <p>
+      We regularly review this privacy notice. We will tell you directly when there’s an important change that may impact you. This privacy notice was last updated on [31st July 2026].
+    </p>
+
+    <p style="margin-top: 20px; color: #999; font-size: 13px;">
+      — End of Privacy Notice —
+    </p>
+
+  </div>
+
+  <div class="scroll-hint" id="scrollHint">
+    &#x25BC; Please scroll down to read the full notice before proceeding
+  </div>
+
+  <div class="read-confirm" id="readConfirm">
+    &#10003; You have read the full Privacy Notice. Please review the consent statement and choose below.
+  </div>
+
+  <div class="consent-box" id="consentBox">
+    <strong>Consent:</strong>
+    I have read and understood the above Privacy Notice and hereby consent to share my details solely
+    for the Purpose mentioned above. I am giving this consent voluntarily at my free will and without
+    any undue coercion or force whatsoever.
+  </div>
+
+  <div class="btn-group">
+    <button id="btn-agree" disabled onclick="handleAgree()">I Agree</button>
+    <button id="btn-disagree" onclick="handleDisagree()">I Disagree</button>
+  </div>
+
+  <div class="disagree-msg" id="disagreeMsg">
+    You have chosen not to agree. Unfortunately, we are unable to proceed without your consent.
+    If you change your mind, please scroll up and select <strong>I Agree</strong>.
+  </div>
+
+  <p class="footer-note">Your privacy is important to us. This notice is provided in compliance with data protection regulations.</p>
+</div>
+
+<script>
+  // ---------------------------------------------------------------
+  // CONFIGURATION — replace with your actual Microsoft Form URL
+  // ---------------------------------------------------------------
+  const MS_FORM_URL = "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=LeQGbiVpxke555WBx8owKkxhVHunozNDpSGsyQgllI9URDRPOVA5Q1cxTlZZMVZUMk9OSjhTUllHRy4u&Token=b90d75cda3224a9d8a75ae9ef3b6618f";
+  // ---------------------------------------------------------------
+
+  const termsBox   = document.getElementById("termsBox");
+  const btnAgree   = document.getElementById("btn-agree");
+  const scrollHint = document.getElementById("scrollHint");
+  const readConfirm = document.getElementById("readConfirm");
+  let hasScrolled  = false;
+
+  termsBox.addEventListener("scroll", function () {
+    const atBottom = termsBox.scrollTop + termsBox.clientHeight >= termsBox.scrollHeight - 10;
+    if (atBottom && !hasScrolled) {
+      hasScrolled = true;
+      btnAgree.disabled = false;
+      scrollHint.classList.add("hidden");
+      readConfirm.classList.add("show");
+      document.getElementById("consentBox").classList.add("show");
+    }
+  });
+
+  function handleAgree() {
+    window.location.href = MS_FORM_URL;
+  }
+
+  function handleDisagree() {
+    document.getElementById("disagreeMsg").classList.add("show");
+    btnAgree.disabled = true;
+  }
+</script>
+
+</body>
+</html>
