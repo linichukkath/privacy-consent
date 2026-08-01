@@ -206,32 +206,7 @@
       .disagree-msg { margin-top: 20px; padding: 14px 18px; font-size: 14px; }
     }
 
-    .consent-box {
-      background: #f0f7ff;
-      border: 1px solid #b3d4f5;
-      border-radius: 6px;
-      padding: 12px 14px;
-      margin-top: 12px;
-      font-size: 13px;
-      line-height: 1.6;
-      color: #1a1a2e;
-      text-align: justify;
-      display: none;
-    }
 
-    .consent-box.show { display: block; }
-
-    .consent-box strong {
-      display: block;
-      margin-bottom: 6px;
-      font-size: 13px;
-      font-weight: 600;
-    }
-
-    @media (min-width: 768px) {
-      .consent-box { padding: 16px 20px; margin-top: 20px; font-size: 14px; }
-      .consent-box strong { font-size: 15px; }
-    }
 
     .footer-note {
       margin-top: 16px;
@@ -337,14 +312,7 @@ Please note that the request mail must be accompanied with a copy of photo ID pr
   </div>
 
   <div class="read-confirm" id="readConfirm">
-    &#10003; You have read the full Privacy Notice. Please review the consent statement and choose below.
-  </div>
-
-  <div class="consent-box" id="consentBox">
-    <strong>Consent:</strong>
-    I have read and understood the above Privacy Notice and hereby consent to share my details solely
-    for the Purpose mentioned above. I am giving this consent voluntarily at my free will and without
-    any undue coercion or force whatsoever.
+    &#10003; You have read the full Privacy Notice. You may now choose below.
   </div>
 
   <div class="btn-group">
@@ -380,7 +348,6 @@ Please note that the request mail must be accompanied with a copy of photo ID pr
       btnAgree.disabled = false;
       scrollHint.classList.add("hidden");
       readConfirm.classList.add("show");
-      document.getElementById("consentBox").classList.add("show");
     }
   });
 
