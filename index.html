@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#0078d4" />
   <title>Privacy Notice & Consent</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -14,15 +15,14 @@
       justify-content: center;
       align-items: flex-start;
       min-height: 100vh;
-      padding: 12px 8px;
+      padding: calc(12px + env(safe-area-inset-top)) 8px calc(12px + env(safe-area-inset-bottom));
     }
 
     .card {
       background: #ffffff;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      max-width: 100%;
-      width: 100%;
+      width: min(100%, 720px);
       padding: 16px;
     }
 
@@ -70,6 +70,8 @@
       border-radius: 6px;
       height: 280px;
       overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
       padding: 12px 14px;
       font-size: 13px;
       line-height: 1.6;
@@ -149,12 +151,14 @@
 
     button {
       padding: 14px 24px;
+      min-height: 48px;
       font-size: 14px;
       border: none;
       border-radius: 6px;
       cursor: pointer;
       font-weight: 600;
       transition: all 0.2s ease;
+      touch-action: manipulation;
       width: 100%;
     }
 
@@ -330,7 +334,8 @@ Please note that the request mail must be accompanied with a copy of photo ID pr
 
 <script>
   // ---------------------------------------------------------------
-  // CONFIGURATION — replace with your actual Microsoft Form URL
+  // CONFIGURATION — use the "Collect responses" URL (forms.office.com/r/...)
+  // instead of an editor/design link.
   // ---------------------------------------------------------------
   const MS_FORM_URL = "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=LeQGbiVpxke555WBx8owKkxhVHunozNDpSGsyQgllI9URDRPOVA5Q1cxTlZZMVZUMk9OSjhTUllHRy4u&Token=b90d75cda3224a9d8a75ae9ef3b6618f";
   // ---------------------------------------------------------------
@@ -357,7 +362,6 @@ Please note that the request mail must be accompanied with a copy of photo ID pr
 
   function handleDisagree() {
     document.getElementById("disagreeMsg").classList.add("show");
-    btnAgree.disabled = true;
   }
 </script>
 
